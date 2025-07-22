@@ -20,6 +20,11 @@ describe("string_extensions", function()
             assert.are.equal('directory', actual)
         end)
 
+        it("cuts off consecutive strings at the beginning", function()
+            local actual = string.trimStart('1111/path/1', '1')
+            assert.are.equal('/path/1', actual)
+        end)
+
         it('returns the input string if not starting with the trim portion', function()
             local expected = '../directory'
             local actual = string.trimStart(expected, 'unknown')

@@ -5,16 +5,17 @@ source = {
   dir = "lua-string-extensions-1.0.0"
 }
 description = {
-   summary = "Utility extensions for Lua strings",
+   summary = "Extension methods to the lua string type",
    detailed = [[
-      Provides common string manipulation methods like trimming.
+      Provides common string manipulation methods like:
+      * startsWith
+      * trimStart
    ]],
-   homepage = "https://github.com/yourusername/lua-string-extensions",
+   homepage = "https://github.com/michaelkargl/lua-string-extensions/",
    license = "MIT"
 }
 dependencies = {
-   "lua >= 5.1",
-   "busted >= 2.2.0"
+   "lua >= 5.1"
 }
 build = {
    type = "builtin",
